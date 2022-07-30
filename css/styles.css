@@ -173,12 +173,18 @@ img {
 }
 
 .contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 7px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+}
+
+.icon-contact {
+  fill: currentColor;
 }
 
 .contact-link:hover,
@@ -198,7 +204,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bg-color);
-  background-image: url('../images/hero-bg.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -255,11 +265,21 @@ img {
 }
 
 .peculiarities-item {
-  max-width: 270px;
+  width: calc((100% -90px) / 4);
 }
 
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
 }
 
 .peculiarities-subtitle {
@@ -267,6 +287,7 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
+
   text-transform: uppercase;
 }
 
@@ -302,6 +323,7 @@ img {
 
 .team-list {
   display: flex;
+  align-items: center;
 }
 
 .team-item {
@@ -339,6 +361,70 @@ img {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.icon-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  /* background-color: tomato; */
+  color: #afb1b8;
+}
+
+.icon-social {
+  fill: currentColor;
+}
+
+.icon-soc-link:hover,
+.icon-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* Clients */
+
+.clients-title {
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-logo-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.icon-clients-logo {
+  fill: currentColor;
+}
+
+.clients-logo-link:hover,
+.clients-logo-link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Footer */
