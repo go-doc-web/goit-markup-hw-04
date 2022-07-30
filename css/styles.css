@@ -482,6 +482,7 @@ b {
 }
 
 .footer-social-text {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -501,7 +502,8 @@ b {
   border-radius: 50%;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--hover-link);
 }
 
